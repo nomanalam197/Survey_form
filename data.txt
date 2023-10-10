@@ -1,0 +1,12 @@
+First Name
+Last Name
+Date Of Birth
+Country ( dropdown )
+Gender ( Checkbox )
+Profession
+Email
+Mobile Number
+All the input fields are necessary to submit the form.
+Create two buttons Submit and Reset.
+Validation
+Popup after clicking on submit button with labels.

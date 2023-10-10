@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <form action="#" id="form_box">
+            <h1>Survey Form</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam minus quibusdam esse eos exercitationem
+                ut ipsam. Quo nemo rem repellendus?</p>
+            <div class="data_fields">
+                <div class="main_field">
+                    <div class="field">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" type="text">
+                    </div>
+                </div>
+                <div class="main_field">
+                    <div class="field">
+                        <label for="dob">Date Of Birth</label>
+                        <input id="dob" type="date">
+                    </div>
+                    <div class="field">
+                        <label for="country">Country</label>
+                        <select id="country_list">
+                            <option value="">Choose your country</option>
+                            <option value="India">India</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Russia">Russia</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="main_field">
+                    <div class="field">
+                        <label for="profession">Profession</label>
+                        <select id="profession_list">
+                            <option value="">Choose your profession</option>
+                            <option value="Web Developer">Web Developer</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="IT Engineer">IT Engineer</option>
+                            <option value="Student">Student</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+                </div>
+                <div class="main_field">
+                    <div class="field">
+                        <label for="mobile_number">Mobile Number</label>
+                        <input id="mobile_number" type="number" id="mobile_number" pattern="[1-9]{1}[0-9]{9}">
+                    </div>
+                    <div class="gender_field">
+                        <label for="gender">Gender</label>
+                        <div class="gender_children">
+                            <label for="d">Male</label>
+                            <input class="checkboxes" type="checkbox" value="Male">
+                            <label for="d">Female</label>
+                            <input class="checkboxes" type="checkbox" value="Female">
+                            <label for="d">LGBTQ</label>
+                            <input class="checkboxes" type="checkbox" value="LGBTQ">
+                        </div>
+                    </div>
+                </div>
+                <div class="main_field">
+                    <div id="check_btn">Check</div>
+                    <button id="reset_btn">Reset</button>
+                </div>
+            </div>
+            <div class="details_box">
+                <div class="box">
+                    <div id="cross">⨉</div>
+                    <h1>Checkout Page</h1>
+                    <h3>First Name : <span id="fname"></span></h3>
+                    <h3>Last Name : <span id="lname"></span></h3>
+                    <h3>Date Of Birth : <span id="Bdate"></span></h3>
+                    <h3>Country : <span id="country"></span></h3>
+                    <h3>Profession : <span id="profession"></span></h3>
+                    <h3>Email : <span id="em"></span></h3>
+                    <h3>Mobile Number : <span id="Mnum"></span></h3>
+                    <h3>Gender : <span id="gen"></span></h3>
+                    <input type="submit" value="Submit" id="submit_btn">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
